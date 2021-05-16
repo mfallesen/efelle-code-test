@@ -1,3 +1,16 @@
 nav {
-    background-image: url('../images/header-bg.jpeg');
+  background-image: url("../images/header-bg.jpeg");
+  color: #2e3d4d;
+  font-family: "Roboto", sans-serif;
 }
+
+.no-decoration {
+  text-decoration: none;
+  color: #222427;
+}
+
+.main-bg {
+  background: center 100% no-repeat url("../images/banner.jpg");
+  min-height: 300px;
+}
+/*# sourceMappingURL=style.css.map */

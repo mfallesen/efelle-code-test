@@ -1,0 +1,38 @@
+// Backgrounds
+$header-bg: url('../images/header-bg.jpeg');
+$wood-bg: url('../images/woodgrain-bg.jpeg');
+$banner-bg: url('../images/banner.jpg');
+
+// Fonts 
+$roboto: 'Roboto', sans-serif;
+$architect: 'Architects Daughter', cursive;
+$teko: 'Teko', sans-serif;
+
+// Colors
+$white: #ffffff;
+$brwnGrey: #333;
+$drkGrey: #222427;
+$drkBlue:#2e3d4d;
+$lgtBlue:#446286;
+
+
+// Element Styles
+nav {
+    background-image: $header-bg;
+    color: $drkBlue;
+    
+    font-family: $roboto;
+}
+
+// Classes
+.no-decoration {
+    text-decoration: none;
+    color: $drkGrey
+}
+
+.main-bg {
+    background: center cover no-repeat $banner-bg;
+    min-height: 300px;
+}
+
+// Id's
