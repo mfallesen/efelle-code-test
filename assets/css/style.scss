@@ -17,22 +17,61 @@ $lgtBlue:#446286;
 
 
 // Element Styles
-nav {
-    background-image: $header-bg;
-    color: $drkBlue;
-    
+body {
     font-family: $roboto;
 }
 
+nav {
+    background-image: $header-bg;
+    color: $drkBlue;  
+}
+
+main {
+    color: $white;
+    text-shadow:  1px 1px 10px $brwnGrey;
+}
+
+h1 {
+    font-size: 4.95rem!important;
+}
+
+h2 {
+    font-size: 3rem!important;
+}
+
 // Classes
+.ad-font {
+    font-family: $architect;
+}
+
+.teko-font {
+    font-family: $teko;
+}
+
 .no-decoration {
     text-decoration: none;
     color: $drkGrey
 }
 
 .main-bg {
-    background: center cover no-repeat $banner-bg;
-    min-height: 300px;
+    background: center no-repeat $banner-bg;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.position {
+    padding-top: 150px;
+
+    margin-left: 250px;
+}
+
+.btn-custom {
+    font-size: 1.2rem;
+    background-color: $lgtBlue;
+    color: $white;
+    padding: 20px 80px 20px 80px;
+    border: none;
+    margin-top: 50px;
 }
 
 // Id's
