@@ -52,4 +52,86 @@ h2 {
   border: none;
   margin-top: 50px;
 }
+
+.kitchen {
+  background: center no-repeat url("../images/kitchens.jpeg");
+  background-size: cover;
+}
+
+.bathrooms {
+  background: center no-repeat url("../images/bathrooms.jpeg");
+  background-size: cover;
+}
+
+.remodels {
+  background: center no-repeat url("../images/remodels.jpeg");
+  background-size: cover;
+}
+
+.decks {
+  background: center no-repeat url("../images/decks.jpeg");
+  background-size: cover;
+}
+
+.service-copy {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.services-bg {
+  background: center no-repeat url("../images/woodgrain-bg.jpeg");
+}
+
+.service-card {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.card {
+  margin: 10px !important;
+}
+
+.round-btn {
+  color: #ffffff;
+  background-color: rgba(34, 36, 39, 0.5);
+  border-radius: 50%;
+  border-style: none;
+  padding: 50px;
+  width: 150px;
+  height: 150px;
+}
+
+.round-btn p {
+  margin: 0;
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+
+.services .service-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 350px;
+  min-width: 250px;
+}
 /*# sourceMappingURL=style.css.map */

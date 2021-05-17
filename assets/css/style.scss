@@ -74,4 +74,69 @@ h2 {
     margin-top: 50px;
 }
 
+.kitchen {
+    background: center no-repeat url('../images/kitchens.jpeg');
+    background-size: cover;
+}
+.bathrooms {
+    background: center no-repeat url('../images/bathrooms.jpeg');
+    background-size: cover;
+}
+.remodels {
+    background: center no-repeat url('../images/remodels.jpeg');
+    background-size: cover;
+}
+.decks {
+    background: center no-repeat url('../images/decks.jpeg');
+    background-size: cover;
+}
+
+.service-copy {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.services-bg {
+    background: center no-repeat $wood-bg;
+}
+
+.service-card {
+    justify-content: center;
+    color: $white;
+    margin: 10px;
+}
+.card {
+    margin: 10px!important;
+}
+
+.round-btn {
+    color: $white;
+    background-color: rgba(34,36,39, 0.5);
+    border-radius: 50%;
+    border-style: none;
+    padding:50px;
+    width: 150px;
+    height: 150px;
+}
+
+.round-btn p {
+    margin: 0;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.services .service-card {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    min-width: 250px;
+}
+
+
 // Id's
