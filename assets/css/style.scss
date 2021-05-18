@@ -97,13 +97,14 @@ h2 {
     display: flex;
     height: 100vh;
     flex-direction: column;
+    
 }
 
 .banner-position {
-    padding-top: 150px;
-
+    $height: 100vh;
+    padding-top: calc(#{$height/3});
+    height: $height;
     margin-left: 100px;
-    flex-grow: 1;
 }
 
 .btn-custom {
