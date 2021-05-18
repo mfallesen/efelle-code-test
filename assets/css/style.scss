@@ -17,8 +17,10 @@ $lgtBlue:#446286;
 
 
 // Element Styles
-body {
+html, body {
     font-family: $roboto;
+    height: 100%;
+    margin: 0;
 }
 
 nav {
@@ -27,6 +29,7 @@ nav {
 }
 
 main {
+    height: 100%;
     color: $white;
     text-shadow:  1px 1px 10px $brwnGrey;
 }
@@ -36,14 +39,22 @@ footer {
 }
 
 h1 {
-    font-size: 4.95rem!important;
-}
-
-h2 {
     font-size: 3rem!important;
 }
 
+h2 {
+    font-size: 2rem!important;
+}
+
 // Classes
+.nowrap {
+    flex-wrap: nowrap!important;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
 .ad-font {
     font-family: $architect;
 }
@@ -52,25 +63,51 @@ h2 {
     font-family: $teko;
 }
 
-.no-decoration {
-    text-decoration: none;
-    color: $drkGrey
+
+.navbar-brand img {
+    max-width: 120px;
+    margin-left: 100px;
+}
+
+.nav-link {
+    font-size: .8rem;
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+}
+
+.nav-font {
+    color: $drkGrey;
+    font-size: .8rem;
+}
+
+.navbar-end {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
 }
 
 .main-bg {
     background: center no-repeat $banner-bg;
     background-size: cover;
     min-height: 600px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
 }
 
-.position {
+.banner-position {
     padding-top: 150px;
 
-    margin-left: 250px;
+    margin-left: 100px;
+    flex-grow: 1;
 }
 
 .btn-custom {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     background-color: $lgtBlue;
     color: $white;
     padding: 20px 80px 20px 80px;
@@ -101,7 +138,7 @@ h2 {
 }
 
 .services-bg {
-    background: center no-repeat $wood-bg;
+    background: center  $wood-bg;
 }
 
 .service-card {
