@@ -1,3 +1,33 @@
+@-webkit-keyframes enquire {
+  from {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes enquire {
+  from {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
 html, body {
   font-family: "Roboto", sans-serif;
   height: 100%;
@@ -105,9 +135,20 @@ h2 {
   font-size: 0.9rem;
   background-color: #446286;
   color: #ffffff;
-  padding: 20px 80px 20px 80px;
+  padding: 15px 60px 15px 60px;
   border: none;
   margin-top: 50px;
+}
+
+.btn-custom p {
+  margin: 0;
+}
+
+.btn-custom:hover {
+  -webkit-animation: enquire 0.5s;
+          animation: enquire 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .kitchen {

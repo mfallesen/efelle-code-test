@@ -15,6 +15,16 @@ $drkGrey: #222427;
 $drkBlue:#2e3d4d;
 $lgtBlue:#446286;
 
+@keyframes enquire {
+    from {
+        transform: translate( 0);
+        transform: scale(1);
+    }
+    to {
+        transform: translate( 5px, 2px);
+        transform: scale(1.2);
+    }
+}
 
 // Element Styles
 html, body {
@@ -111,9 +121,23 @@ h2 {
     font-size: 0.9rem;
     background-color: $lgtBlue;
     color: $white;
-    padding: 20px 80px 20px 80px;
+    padding: 15px 60px 15px 60px;
     border: none;
     margin-top: 50px;
+}
+.btn-custom p {
+    margin: 0;
+}
+
+.btn-custom:hover {
+    // border-style: solid;
+    // border-color: $drkBlue;
+    animation: enquire 0.5s;
+    animation-fill-mode: forwards;
+    
+}
+
+.btn-custom p:hover {
 }
 
 .kitchen {
