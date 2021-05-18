@@ -12,6 +12,10 @@ main {
   text-shadow: 1px 1px 10px #333;
 }
 
+footer {
+  background-color: #222427;
+}
+
 h1 {
   font-size: 4.95rem !important;
 }
@@ -133,5 +137,35 @@ h2 {
           align-items: center;
   min-height: 350px;
   min-width: 250px;
+}
+
+.contact {
+  color: #ffffff;
+}
+
+.legal {
+  color: #446286;
+}
+
+.copyright {
+  color: #737373;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.footer-wrapper {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 /*# sourceMappingURL=style.css.map */

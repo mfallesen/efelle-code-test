@@ -31,6 +31,10 @@ main {
     text-shadow:  1px 1px 10px $brwnGrey;
 }
 
+footer {
+    background-color: $drkGrey;
+}
+
 h1 {
     font-size: 4.95rem!important;
 }
@@ -138,5 +142,28 @@ h2 {
     min-width: 250px;
 }
 
+.contact {
+    color: $white;
+}
 
+.legal {
+    color: $lgtBlue
+}
+
+.copyright {
+    color: rgb(115, 115, 115);
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.footer-wrapper {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 // Id's
