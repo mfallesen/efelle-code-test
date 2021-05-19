@@ -15,8 +15,8 @@ $drkGrey: #222427;
 $drkBlue:#2e3d4d;
 $lgtBlue:#446286;
 
-
-$small: 0px;
+// Breakpoints for Media Queries
+$small: 532px;
 $medium: 768px;
 
 @media screen and (max-width:$medium) {
@@ -33,7 +33,19 @@ $medium: 768px;
 
 }
 
+@media screen and (max-width:$small) {
+    .contact {
+        width: 40%!important;
+    }
+    .social {
+        width: 40%!important;
+    }
+    .phone {
+        margin-right: auto;
+    }
+}
 
+// Animations
 @keyframes enquire {
     from {
         transform: translate( 0);
@@ -76,29 +88,36 @@ h2 {
     font-size: 2rem!important;
 }
 
-// Classes
-.nowrap {
-    flex-wrap: nowrap!important;
-}
-
-.no-decoration {
-    text-decoration: none;
-}
-
+// Font, Text, and Utility Classes
 .ad-font {
     font-family: $architect;
 }
-
+.no-decoration {
+    text-decoration: none;
+}
+.nowrap {
+    flex-wrap: nowrap!important;
+}
 .teko-font {
     font-family: $teko;
 }
 
-
+// Navigation Specific Classes
 .navbar-brand img {
     max-width: 120px;
     margin-left: 100px;
 }
-
+.nav-font {
+    color: $drkGrey;
+    font-size: .8rem;
+}
+.navbar-end {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+}
 .nav-link {
     font-size: .8rem;
 }
@@ -107,28 +126,7 @@ h2 {
     transform: scale(1.2);
 }
 
-.nav-font {
-    color: $drkGrey;
-    font-size: .8rem;
-}
-
-.navbar-end {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-content: flex-end;
-    align-items: flex-end;
-}
-
-.main-bg {
-    flex-direction: column;
-    background: center no-repeat $banner-bg;
-    background-size: cover;
-    min-height: 600px;
-    display: flex;
-    height: 100vh;
-}
-
+// Banner Section Classes
 .banner-position {
     display: flex;
     flex-direction: column;
@@ -137,7 +135,6 @@ h2 {
     height: $height;
     margin-left: 100px;
 }
-
 .btn-custom {
     font-size: 0.9rem;
     max-width: 200px;
@@ -150,16 +147,20 @@ h2 {
 .btn-custom p {
     margin: 0;
 }
-
 .btn-custom:hover {
-    // border-style: solid;
-    // border-color: $drkBlue;
     animation: enquire 0.5s;
-    animation-fill-mode: forwards;
-    
+    animation-fill-mode: forwards;  
+}
+.main-bg {
+    flex-direction: column;
+    background: center no-repeat $banner-bg;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    height: 100vh;
 }
 
-
+// Service and Card Backgrounds
 .kitchen {
     background: center no-repeat url('../images/kitchens.jpeg');
     background-size: cover;
@@ -176,7 +177,17 @@ h2 {
     background: center no-repeat url('../images/decks.jpeg');
     background-size: cover;
 }
+.services-bg {
+    background: center  $wood-bg;
+}
 
+// Services Section Classes
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
 .service-copy {
     text-align: center;
     padding-top: 50px;
@@ -185,26 +196,22 @@ h2 {
 .service-copy h4{
     font-weight: 350;
 }
-
 .service-copy p {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
-
-
-.services-bg {
-    background: center  $wood-bg;
+.services .service-card {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    min-width: 200px;
 }
-
 .service-card {
     justify-content: center;
     color: $white;
     margin: 10px;
 }
-.card {
-    margin: 10px!important;
-}
-
 .round-btn {
     display: flex;
     flex-direction: column;
@@ -218,57 +225,43 @@ h2 {
     width: 150px;
     height: 150px;
 }
-
 .round-btn:hover {
     transform: translateY(-10px);
     background-color: rgba(34,36,39, 0.9);
     box-shadow: 0 10px 10px $drkGrey;
 }
-
-
 .round-btn p {
     margin: 0;
     line-height: 0;
 }
-
 .round-btn-text {
     font-size: 1.3rem;
     letter-spacing: 2px;
     line-height: 1!important;
 }
 
-.services {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-bottom: 50px;
-}
-
-.services .service-card {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 250px;
-    min-width: 200px;
-}
-
-.contact {
-    color: $white;
-    font-size: .9rem;
-}
-.phone {
-    margin-left: auto;
-}
-
-.legal {
-    color: $lgtBlue
-}
-
+// Footer Classes
 .copyright {
     color: rgb(115, 115, 115);
     margin: 0;
 }
-
+.contact {
+    color: $white;
+    font-size: .9rem;
+}
+.footer-wrapper {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+}
+.legal {
+    color: $lgtBlue
+}
+.phone {
+    margin-left: auto;
+}
 .social {
     display: flex;
     flex-direction: column;
@@ -280,12 +273,3 @@ h2 {
 .social-row a{
     margin-left: 15px;
 }
-
-.footer-wrapper {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    justify-content: space-between;
-}
-// Id's

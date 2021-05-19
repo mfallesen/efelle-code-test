@@ -16,6 +16,18 @@
   }
 }
 
+@media screen and (max-width: 532px) {
+  .contact {
+    width: 40% !important;
+  }
+  .social {
+    width: 40% !important;
+  }
+  .phone {
+    margin-right: auto;
+  }
+}
+
 @-webkit-keyframes enquire {
   from {
     -webkit-transform: translate(0);
@@ -76,17 +88,17 @@ h2 {
   font-size: 2rem !important;
 }
 
-.nowrap {
-  -ms-flex-wrap: nowrap !important;
-      flex-wrap: nowrap !important;
+.ad-font {
+  font-family: "Architects Daughter", cursive;
 }
 
 .no-decoration {
   text-decoration: none;
 }
 
-.ad-font {
-  font-family: "Architects Daughter", cursive;
+.nowrap {
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
 }
 
 .teko-font {
@@ -96,15 +108,6 @@ h2 {
 .navbar-brand img {
   max-width: 120px;
   margin-left: 100px;
-}
-
-.nav-link {
-  font-size: .8rem;
-}
-
-.nav-link:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .nav-font {
@@ -130,18 +133,13 @@ h2 {
           align-items: flex-end;
 }
 
-.main-bg {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: center no-repeat url("../images/banner.jpg");
-  background-size: cover;
-  min-height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
+.nav-link {
+  font-size: .8rem;
+}
+
+.nav-link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .banner-position {
@@ -178,6 +176,20 @@ h2 {
           animation-fill-mode: forwards;
 }
 
+.main-bg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: center no-repeat url("../images/banner.jpg");
+  background-size: cover;
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
 .kitchen {
   background: center no-repeat url("../images/kitchens.jpeg");
   background-size: cover;
@@ -198,6 +210,23 @@ h2 {
   background-size: cover;
 }
 
+.services-bg {
+  background: center url("../images/woodgrain-bg.jpeg");
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+
 .service-copy {
   text-align: center;
   padding-top: 50px;
@@ -213,8 +242,18 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-.services-bg {
-  background: center url("../images/woodgrain-bg.jpeg");
+.services .service-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 250px;
+  min-width: 200px;
 }
 
 .service-card {
@@ -223,10 +262,6 @@ h2 {
           justify-content: center;
   color: #ffffff;
   margin: 10px;
-}
-
-.card {
-  margin: 10px !important;
 }
 
 .round-btn {
@@ -271,31 +306,9 @@ h2 {
   line-height: 1 !important;
 }
 
-.services {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-bottom: 50px;
-}
-
-.services .service-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 250px;
-  min-width: 200px;
+.copyright {
+  color: #737373;
+  margin: 0;
 }
 
 .contact {
@@ -303,17 +316,22 @@ h2 {
   font-size: .9rem;
 }
 
-.phone {
-  margin-left: auto;
+.footer-wrapper {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .legal {
   color: #446286;
 }
 
-.copyright {
-  color: #737373;
-  margin: 0;
+.phone {
+  margin-left: auto;
 }
 
 .social {
@@ -333,15 +351,5 @@ h2 {
 
 .social-row a {
   margin-left: 15px;
-}
-
-.footer-wrapper {
-  padding-top: 30px;
-  padding-bottom: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
