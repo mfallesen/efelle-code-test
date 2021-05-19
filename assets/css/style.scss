@@ -228,6 +228,10 @@ h2 {
 
 .contact {
     color: $white;
+    font-size: .9rem;
+}
+.phone {
+    margin-left: auto;
 }
 
 .legal {
@@ -236,6 +240,7 @@ h2 {
 
 .copyright {
     color: rgb(115, 115, 115);
+    margin: 0;
 }
 
 .social {
@@ -243,11 +248,18 @@ h2 {
     flex-direction: column;
     text-align: right;
 }
+.social-row {
+    margin-top: 30px;
+}
+.social-row a{
+    margin-left: 15px;
+}
 
 .footer-wrapper {
     padding-top: 30px;
     padding-bottom: 50px;
     padding-left: 100px;
     padding-right: 100px;
+    justify-content: space-between;
 }
 // Id's
