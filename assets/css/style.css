@@ -1,3 +1,21 @@
+@media screen and (max-width: 768px) {
+  .banner-position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: calc(33.33333vh);
+    height: 100vh;
+    margin-left: 0 !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @-webkit-keyframes enquire {
   from {
     -webkit-transform: translate(0);
@@ -113,6 +131,10 @@ h2 {
 }
 
 .main-bg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: center no-repeat url("../images/banner.jpg");
   background-size: cover;
   min-height: 600px;
@@ -120,13 +142,16 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
+}
+
+.banner-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.banner-position {
   padding-top: calc(33.33333vh);
   height: 100vh;
   margin-left: 100px;
@@ -134,6 +159,7 @@ h2 {
 
 .btn-custom {
   font-size: 0.9rem;
+  max-width: 200px;
   background-color: #446286;
   color: #ffffff;
   padding: 15px 60px 15px 60px;
@@ -178,8 +204,13 @@ h2 {
   padding-bottom: 20px;
 }
 
+.service-copy h4 {
+  font-weight: 350;
+}
+
 .service-copy p {
   font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .services-bg {
@@ -247,9 +278,9 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding-bottom: 50px;
 }
 
@@ -263,8 +294,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 300px;
-  min-width: 250px;
+  min-height: 250px;
+  min-width: 200px;
 }
 
 .contact {

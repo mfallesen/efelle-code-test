@@ -15,6 +15,25 @@ $drkGrey: #222427;
 $drkBlue:#2e3d4d;
 $lgtBlue:#446286;
 
+
+$small: 0px;
+$medium: 768px;
+
+@media screen and (max-width:$medium) {
+    
+    .banner-position {
+        display: flex;
+        flex-direction: column;
+        $height: 100vh;
+        padding-top: calc(#{$height/3});
+        height: $height;
+        margin-left: 0!important;
+        align-items: center;
+    }
+
+}
+
+
 @keyframes enquire {
     from {
         transform: translate( 0);
@@ -102,16 +121,17 @@ h2 {
 }
 
 .main-bg {
+    flex-direction: column;
     background: center no-repeat $banner-bg;
     background-size: cover;
     min-height: 600px;
     display: flex;
     height: 100vh;
-    flex-direction: column;
-    
 }
 
 .banner-position {
+    display: flex;
+    flex-direction: column;
     $height: 100vh;
     padding-top: calc(#{$height/3});
     height: $height;
@@ -120,6 +140,7 @@ h2 {
 
 .btn-custom {
     font-size: 0.9rem;
+    max-width: 200px;
     background-color: $lgtBlue;
     color: $white;
     padding: 15px 60px 15px 60px;
@@ -161,9 +182,13 @@ h2 {
     padding-top: 50px;
     padding-bottom: 20px;
 }
+.service-copy h4{
+    font-weight: 350;
+}
 
 .service-copy p {
     font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -215,7 +240,7 @@ h2 {
 .services {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-bottom: 50px;
 }
 
@@ -223,8 +248,8 @@ h2 {
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 300px;
-    min-width: 250px;
+    min-height: 250px;
+    min-width: 200px;
 }
 
 .contact {
