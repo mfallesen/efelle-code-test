@@ -137,8 +137,6 @@ h2 {
     
 }
 
-.btn-custom p:hover {
-}
 
 .kitchen {
     background: center no-repeat url('../images/kitchens.jpeg');
@@ -160,7 +158,13 @@ h2 {
 .service-copy {
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 20px;
 }
+
+.service-copy p {
+    font-size: 1rem;
+}
+
 
 .services-bg {
     background: center  $wood-bg;
@@ -176,6 +180,10 @@ h2 {
 }
 
 .round-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: $white;
     background-color: rgba(34,36,39, 0.5);
     border-radius: 50%;
@@ -185,8 +193,22 @@ h2 {
     height: 150px;
 }
 
+.round-btn:hover {
+    transform: translateY(-10px);
+    background-color: rgba(34,36,39, 0.9);
+    box-shadow: 0 10px 10px $drkGrey;
+}
+
+
 .round-btn p {
     margin: 0;
+    line-height: 0;
+}
+
+.round-btn-text {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 1!important;
 }
 
 .services {
@@ -200,7 +222,7 @@ h2 {
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 350px;
+    min-height: 300px;
     min-width: 250px;
 }
 
